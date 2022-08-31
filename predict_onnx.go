@@ -1,10 +1,5 @@
 package main
 
-/*
-CGO_CPPFLAGS="-I/usr/local/include/opencv4" CGO_LDFLAGS="-L/usr/local/lib -lopencv_core -lopencv_calib3d -lopencv_imgproc" go build -o data/
-LD_LIBRARY_PATH=/usr/local/lib data/onnx_test
-*/
-
 import (
 	"log"
 	//"image"
