@@ -51,21 +51,21 @@ output_names = [ "output" ]
 
 # convert to onnx model
 torch.onnx.export(model1, 
-                  dummy_input,
-                  "outputs/2.7_80x80_MiniFASNetV2.onnx",
-                  verbose=False,
-                  input_names=input_names,
-                  output_names=output_names,
-                  export_params=True,
-                  )
+    dummy_input,
+    "outputs/2.7_80x80_MiniFASNetV2.onnx",
+    verbose=False,
+    input_names=input_names,
+    output_names=output_names,
+    export_params=True,
+    )
 
 
 torch.onnx.export(model2, 
-                  dummy_input,
-                  "outputs/4_0_0_80x80_MiniFASNetV1SE.onnx",
-                  verbose=False,
-                  input_names=input_names,
-                  output_names=output_names,
-                  export_params=True,
-                  )
+    dummy_input,
+    "outputs/4_0_0_80x80_MiniFASNetV1SE.onnx",
+    verbose=False,
+    input_names=input_names,
+    output_names=output_names,
+    export_params=True,
+    )
 
